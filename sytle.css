@@ -1,7 +1,7 @@
 html,
 body {
   background: #23272b;
-  color:#fff;
+  color: #fff;
 }
 
 /* Your logo header */
@@ -19,14 +19,13 @@ body {
   width: 100%;
   text-align: center;
   padding-bottom: 1px;
-
 }
 
 /* Main page area */
 
 .hero {
-
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("minecraft\ bed\ -\ 1080p.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("minecraft\ bed\ -\ 1080p.jpg") no-repeat center center;
   height: 50%;
   width: 100%;
   background-size: cover;
@@ -35,13 +34,14 @@ body {
 }
 
 .main {
+  display:flex;
+  justify-content: center;
   height: 77vh;
-
 }
 
 #text-block {
   padding-top: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .welcome {
@@ -50,73 +50,80 @@ body {
 }
 
 #descrip {
-  line-height: 2.5em;
+  line-height: 2em;
   display: inline-block;
-  max-width: 640px;
+  max-width: 760px;
 }
 
 .statusinfo {
   display: block;
+  justify-content: flex-start;
   text-align: left;
   color: #fff;
   list-style-type: none;
   margin-left: 10px;
-}
-footer{
-  text-align: center;
-}
-
-/* MCserver Status*/
-
-ul {
-  position: relative;
-  line-height: 2.0em;
+  line-height: 2em;
   width: 15rem;
   height: 13rem;
   border: 0.8rem solid #5e912d;
   border-radius: 20px;
 }
 
-ul h4 {
+.engimatica2{
+margin-top: 50px;
+margin-left:30px;
+height: 30%;
+width: 20%;
+
+}
+
+/* MCserver Status*/
+
+
+ul h3 {
   color: red;
 }
 
 /* MCserver Status End*/
 
-@media screen and (max-width:637px) and (min-height:411px){
+@media screen and (max-width: 637px) and (min-height: 411px) {
   .logo2 {
     width: 280px;
     margin: 40px;
   }
-  
-  
+
   .logo1 {
     width: 90%;
     text-align: left;
   }
-  
-  
+
   .hero {
-  background: #23272b;
-}
-.main,.welcome {
-  width:90%;
-}
-
-
-ul {
-  display: block;
-  font-size: 90%;
-  line-height: 2.5em;
-  border: 0;
-
-}
-#descrip{
-  display:inline-block;
-  
+    background: #23272b;
   }
-  footer{
-    color:#23272b;
+  .main,
+  .welcome {
+    width: 90%;
+  }
 
+  ul {
+    display: block;
+    font-size: 90%;
+    line-height: 2.5em;
+    border: 0;
+  }
+  #descrip {
+    display: inline-block;
+  }
+  footer {
+    color: #23272b;
+  }
+  .engimatica2{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1104px) {
+  .engimatica2{
+    display: none;
   }
 }

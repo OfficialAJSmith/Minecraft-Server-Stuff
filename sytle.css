@@ -1,6 +1,7 @@
 html,
 body {
   background: #23272b;
+  color:#fff;
 }
 
 /* Your logo header */
@@ -9,15 +10,15 @@ body {
   background-color: #23272b;
 }
 
-.logo {
+.logo2 {
   width: 280px;
-  margin: 20px 80px;
+  margin: 15px 80px;
 }
 
-.log {
+.logo1 {
   width: 100%;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
 
 }
 
@@ -25,21 +26,21 @@ body {
 
 .hero {
 
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
-    url("minecraft\ bed\ -\ 1080p.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url("minecraft\ bed\ -\ 1080p.jpg") no-repeat center center;
   height: 50%;
+  width: 100%;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-
   color: white;
 }
 
-.main{
-  height:77vh;
-  
+.main {
+  height: 77vh;
+
 }
+
 #text-block {
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -55,19 +56,23 @@ body {
 }
 
 .statusinfo {
-  text-align: center;
+  display: block;
+  text-align: left;
   color: #fff;
   list-style-type: none;
-  padding: 5px;
+  margin-left: 10px;
+}
+footer{
+  text-align: center;
 }
 
 /* MCserver Status*/
 
 ul {
-  position: absolute;
-  line-height: 2.5em;
-  width: 20rem;
-  height: 15rem;
+  position: relative;
+  line-height: 2.0em;
+  width: 15rem;
+  height: 13rem;
   border: 0.8rem solid #5e912d;
   border-radius: 20px;
 }
@@ -78,16 +83,40 @@ ul h4 {
 
 /* MCserver Status End*/
 
-/* Bottom of the page */
-@media only screen and (max-width: 600px) {
-  ul {
-    left:50%;
-    
-    line-height: 2.5em;
-    width: 20rem;
-    height: 15rem;
-    border: 0.8rem solid #5e912d;
-    border-radius: 20px;
+@media screen and (max-width:637px) and (min-height:411px){
+  .logo2 {
+    width: 280px;
+    margin: 40px;
   }
   
+  
+  .logo1 {
+    width: 90%;
+    text-align: left;
+  }
+  
+  
+  .hero {
+  background: #23272b;
+}
+.main,.welcome {
+  width:90%;
+}
+
+
+ul {
+  display: block;
+  font-size: 90%;
+  line-height: 2.5em;
+  border: 0;
+
+}
+#descrip{
+  display:inline-block;
+  
+  }
+  footer{
+    color:#23272b;
+
+  }
 }

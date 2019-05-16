@@ -1,6 +1,6 @@
 //Get the Json Data
 $.getJSON('https://api.mcsrvstat.us/1/doinks.tplinkdns.com', function (status) {
-    //Show the version
+    //insert data into dom
     var modvr = status.motd.raw;
     var mcvr = status.version;
     var mcst = status.players.online;
@@ -12,3 +12,20 @@ $.getJSON('https://api.mcsrvstat.us/1/doinks.tplinkdns.com', function (status) {
 
 
 });
+
+(function() {
+
+	var hamburger = {
+		navToggle: document.querySelector('#hamburg'),
+        nav: document.querySelector('#ull'),
+
+		doToggle: function(e) {
+			e.preventDefault();
+			
+			this.nav.classList.toggle('active');
+		}
+	};
+    hamburger.nav.addEventListener('click', function(e) { hamburger.doToggle(e); });
+	hamburger.navToggle.addEventListener('click', function(e) { hamburger.doToggle(e); });
+
+}());
